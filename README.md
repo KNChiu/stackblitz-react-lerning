@@ -1,3 +1,10 @@
-# stackblitz-react-lerning
+# Todo Sample.
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/stackblitz-starters-f5g7dr)
+my-app/
+├─ node_modules/
+├─ public/
+│ └─ index.html
+├─ src/
+│ ├─ App.tsx
+│ ├─ Todo.tsx
+│ └─ index.tsx <- 程式入口文件

@@ -20,17 +20,22 @@ const Todo: FunctionComponent<TodoProps> = ({
   removeTodo,
 }) => {
   return (
-    <div
-      className="todo"
-      style={{ textDecoration: todo.isCompleted ? 'line-through' : '' }}
+    <li
+      className={`list-group-item ${
+        todo.isCompleted ? 'list-group-item-success' : ''
+      }`}
     >
       {todo.text}
 
       <div>
-        <button onClick={() => completeTodo(index)}>Complete</button>
-        <button onClick={() => removeTodo(index)}>x</button>
+        <button className="btn btn-primary" onClick={() => completeTodo(index)}>
+          Complete
+        </button>
+        <button className="btn btn-danger" onClick={() => removeTodo(index)}>
+          x
+        </button>
       </div>
-    </div>
+    </li>
   );
 };
 
